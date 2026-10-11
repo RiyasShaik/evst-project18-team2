@@ -28,4 +28,4 @@ Requires Python 3 with `pandas`, `numpy`, `scipy`, `matplotlib`.
 
 ## Team
 
-N Pavaneswar (2024102063) · Shaik Babu (2024101032) · Jetty Jitendra Sai Ram (2024101102) · Dr Sashangh (2024101069)
+Jetty Jithendra Sai Ram (2024101102) · N Pavaneswar (2024102063) · Shaik Babu (2024101032) · Dr Shashang (2024101069)
