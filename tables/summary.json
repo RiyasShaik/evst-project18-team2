@@ -1,0 +1,18 @@
+{
+ "n_samples": 7517,
+ "n_datasets_total": 671,
+ "n_core_sites": 164,
+ "regions": {
+  "W. & Central Europe": 94,
+  "W. Mediterranean": 22,
+  "E. Europe": 18,
+  "British Isles": 17,
+  "E. Mediterranean & Anatolia": 13
+ },
+ "median_age_unc": 190.5,
+ "chron": {
+  "other-cal": 3478,
+  "MADCAP": 2304,
+  "default": 1735
+ }
+}

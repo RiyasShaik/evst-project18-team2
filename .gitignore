@@ -1,0 +1,6 @@
+raw/
+out/
+__pycache__/
+*.pyc
+MID_EVAL_PREP.md
+GENSPARK_PROMPT.md
