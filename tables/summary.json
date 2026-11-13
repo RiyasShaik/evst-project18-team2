@@ -1,18 +1,22 @@
 {
- "n_samples": 7517,
- "n_datasets_total": 671,
- "n_core_sites": 164,
+ "n_samples": 12508,
+ "n_records": 1064,
+ "n_sites": 984,
+ "n_core_sites": 281,
+ "n_core_records": 335,
+ "core_sites_with_2plus_records": 40,
  "regions": {
-  "W. & Central Europe": 94,
-  "W. Mediterranean": 22,
-  "E. Europe": 18,
-  "British Isles": 17,
-  "E. Mediterranean & Anatolia": 13
+  "W. & Central Europe": 161,
+  "W. Mediterranean": 36,
+  "E. Europe": 34,
+  "British Isles": 27,
+  "E. Mediterranean & Anatolia": 23
  },
- "median_age_unc": 190.5,
- "chron": {
-  "other-cal": 3478,
-  "MADCAP": 2304,
-  "default": 1735
- }
+ "median_samples_pre": 3.0,
+ "median_samples_post": 4.0,
+ "core_sites_with_age_range": 116,
+ "median_age_half_range": 175.75,
+ "n_placebo_sites": 226,
+ "gap_real_yr": 175.5,
+ "gap_placebo_yr": 145.5
 }

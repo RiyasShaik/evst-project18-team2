@@ -1,0 +1,262 @@
+{
+ "cooling_400_535_to_536_660_degC": {
+  "alpine": 0.606,
+  "pages2k_cps": 0.253,
+  "pages2k_bhm": 0.324
+ },
+ "mean_anomaly_degC": {
+  "alpine": {
+   "300-399": -0.963,
+   "536-660": -1.228
+  },
+  "pages2k_cps": {
+   "300-399": -0.368,
+   "536-660": -0.338
+  },
+  "pages2k_bhm": {
+   "300-399": -0.343,
+   "536-660": -0.404
+  }
+ },
+ "alpine_31yr_fall": {
+  "from_year": 509,
+  "to_year": 552,
+  "degC": 1.54
+ },
+ "pages2k_bhm_95pct_halfwidth_300_900_degC": 0.93,
+ "kocain": {
+  "n_200_1000": 93,
+  "mean_spacing_yr": 8.5,
+  "d18O_330_460": -4.09,
+  "d18O_541_660": -3.56
+ },
+ "soreq": {
+  "n_200_1000": 132,
+  "n_330_460": 38,
+  "n_541_660": 4,
+  "d18O_330_460": -6.19,
+  "d18O_541_660": -6.19,
+  "bins_measured_200_1000": 23,
+  "bins_200_1000": 32
+ },
+ "temperature_sd_degC_300_900": 0.219,
+ "corr_temperature_plague_dummy": 0.1,
+ "n_regression_coefficients": 372,
+ "hyde_relative_to_500CE_pct": {
+  "crop_50": {
+   "200": 131,
+   "300": 124,
+   "400": 113,
+   "500": 100,
+   "600": 88,
+   "700": 91,
+   "800": 102,
+   "900": 124,
+   "1000": 137
+  },
+  "graz_50": {
+   "200": 131,
+   "300": 122,
+   "400": 115,
+   "500": 100,
+   "600": 86,
+   "700": 148,
+   "800": 245,
+   "900": 356,
+   "1000": 404
+  },
+  "popd_50": {
+   "200": 123,
+   "300": 119,
+   "400": 112,
+   "500": 100,
+   "600": 88,
+   "700": 93,
+   "800": 100,
+   "900": 112,
+   "1000": 122
+  }
+ },
+ "mc": {
+  "share_samples_with_age_range": 0.373,
+  "sigma_median_yr": 93.6
+ },
+ "midterm_revisions": {
+  "midterm_records_in_final": 659,
+  "midterm_samples_in_those": 7380,
+  "samples_changed_or_removed": 284,
+  "records_affected": 19
+ },
+ "midterm_list": {
+  "listed": 891,
+  "used_midterm": 671,
+  "used_final": 862
+ },
+ "midterm_core_sites_in_final_core": 159,
+ "midterm_core_records": 164,
+ "corr_anthro_Teu_300_900_all_except_EMed": {
+  "r": 0.44,
+  "r_detrended": -0.0,
+  "p_detrended": 0.99
+ },
+ "n_correlations": 1008,
+ "emed_timing": {
+  "arbor_peak_bin_300_540": 412.5,
+  "anthro_peak_bin_300_540": 387.5,
+  "arbor_mean_z_before_vs_after_425": {
+   "300-425": 0.48,
+   "425-540": 0.14
+  },
+  "kocain_moisture_peak_bin": 362.5,
+  "kocain_first_bin_below_mean_after_peak": 462.5,
+  "kocain_driest_bin_400_800": 587.5
+ },
+ "emed_core_sites": [
+  {
+   "siteid": 4076,
+   "site": "Gölhisar Gölü",
+   "lon": 29.6,
+   "lat": 37.13
+  },
+  {
+   "siteid": 4467,
+   "site": "Suho ezero II",
+   "lon": 23.56,
+   "lat": 42.07
+  },
+  {
+   "siteid": 22330,
+   "site": "Didachara",
+   "lon": 42.5,
+   "lat": 41.68
+  },
+  {
+   "siteid": 22953,
+   "site": "Ispani 2",
+   "lon": 41.8,
+   "lat": 41.86
+  },
+  {
+   "siteid": 24030,
+   "site": "Lake Blatisto",
+   "lon": 24.68,
+   "lat": 41.62
+  },
+  {
+   "siteid": 24358,
+   "site": "Litochoro",
+   "lon": 22.55,
+   "lat": 40.14
+  },
+  {
+   "siteid": 24376,
+   "site": "Lake Lerna",
+   "lon": 22.73,
+   "lat": 37.58
+  },
+  {
+   "siteid": 24390,
+   "site": "Lake Voulkaria",
+   "lon": 20.83,
+   "lat": 38.87
+  },
+  {
+   "siteid": 42421,
+   "site": "Lake Almalou",
+   "lon": 46.63,
+   "lat": 37.67
+  },
+  {
+   "siteid": 45173,
+   "site": "Lake Sapanca",
+   "lon": 30.25,
+   "lat": 40.72
+  },
+  {
+   "siteid": 45316,
+   "site": "Dead Sea 7",
+   "lon": 35.43,
+   "lat": 31.49
+  },
+  {
+   "siteid": 49503,
+   "site": "Chamsine",
+   "lon": 35.95,
+   "lat": 33.75
+  },
+  {
+   "siteid": 52076,
+   "site": "Bereket",
+   "lon": 30.3,
+   "lat": 37.54
+  },
+  {
+   "siteid": 52153,
+   "site": "Birkat Ram",
+   "lon": 35.67,
+   "lat": 33.25
+  },
+  {
+   "siteid": 52236,
+   "site": "Asi Gonia",
+   "lon": 24.28,
+   "lat": 35.25
+  },
+  {
+   "siteid": 52250,
+   "site": "Nar Gölü",
+   "lon": 34.46,
+   "lat": 38.34
+  },
+  {
+   "siteid": 52901,
+   "site": "Lake Kournas",
+   "lon": 24.28,
+   "lat": 35.33
+  },
+  {
+   "siteid": 55812,
+   "site": "Lake Suho Ezero",
+   "lon": 23.42,
+   "lat": 42.13
+  },
+  {
+   "siteid": 58088,
+   "site": "Limni Lysimachia lake",
+   "lon": 21.4,
+   "lat": 38.55
+  },
+  {
+   "siteid": 58118,
+   "site": "Katouna Fen",
+   "lon": 21.11,
+   "lat": 38.83
+  },
+  {
+   "siteid": 74588,
+   "site": "Muratovo Ezero",
+   "lon": 23.41,
+   "lat": 41.75
+  },
+  {
+   "siteid": 74770,
+   "site": "Lake Panichiste",
+   "lon": 23.29,
+   "lat": 42.26
+  },
+  {
+   "siteid": 75229,
+   "site": "Lake Manastirsko-2",
+   "lon": 23.41,
+   "lat": 42.13
+  }
+ ],
+ "core_sites_east_of_44E": [
+  "Lake Almalou"
+ ],
+ "relaxed_emed_east_of_44E": [
+  "Lake Zeribar",
+  "Lake Almalou",
+  "Pounel mire"
+ ]
+}

@@ -2,5 +2,7 @@ raw/
 out/
 __pycache__/
 *.pyc
+node_modules/
+Notables/
 MID_EVAL_PREP.md
 GENSPARK_PROMPT.md

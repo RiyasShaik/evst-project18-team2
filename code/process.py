@@ -12,6 +12,7 @@ ARBOR = re.compile(r'^(olea(?!ceae)|juglans|castanea|vitis)', re.I)   # cultivat
 OLEA = re.compile(r'^olea(?!ceae)', re.I)
 PAST = re.compile(r'^plantago lanceolata|^rumex (acetosa|acetosella)|^rumex(-type| undiff\.)?$|rumex subg\. acetosa', re.I)
 TERR = {'TRSH', 'UPHE'}
+CAL = ('Calibrated radiocarbon years BP', 'Calendar years BP', 'Varve years BP', 'Calendar years AD/BC')
 
 
 def region(lon, lat):
@@ -42,8 +43,27 @@ def lrare(counts, n):
     return s
 
 
+def centroid(g):
+    """Point coordinates, or the vertex mean of the outer ring for sites stored as polygons."""
+    c = g['coordinates']
+    if g['type'] == 'Point':
+        return c
+    while isinstance(c[0][0], list):
+        c = c[0]
+    return [sum(p[0] for p in c) / len(c), sum(p[1] for p in c) / len(c)]
+
+
+def to_bp(a):
+    """Calendar-scale age record with AD/BC ages converted to years BP."""
+    if a['agetype'] != 'Calendar years AD/BC':
+        return a
+    return dict(a, age=1950 - a['age'],
+                ageolder=None if a['ageolder'] is None else 1950 - a['ageolder'],
+                ageyounger=None if a['ageyounger'] is None else 1950 - a['ageyounger'])
+
+
 def pick_age(ages, default_id):
-    cal = [a for a in ages if a['agetype'] and a['agetype'].startswith('Calibrated') and a['age'] is not None]
+    cal = [to_bp(a) for a in ages if a['agetype'] in CAL and a['age'] is not None]
     if not cal:
         return None, None
     for a in cal:
@@ -58,13 +78,10 @@ def pick_age(ages, default_id):
 rows = []
 for f in glob.glob(f'{RAW}/*.json'):
     try:
-        site = json.load(open(f))['data'][0]['site']
+        site = json.load(open(f, encoding='utf-8'))['data'][0]['site']
     except Exception:
         continue
-    g = json.loads(site['geography'])
-    if g['type'] != 'Point':
-        continue
-    lon, lat = g['coordinates']
+    lon, lat = centroid(json.loads(site['geography']))
     cu = site['collectionunit']
     ds = cu['dataset']
     for s in ds['samples']:
@@ -89,10 +106,10 @@ for f in glob.glob(f'{RAW}/*.json'):
         arbor = sum(v for k, v in taxa.items() if ARBOR.search(k))
         unc = None
         if a.get('ageolder') is not None and a.get('ageyounger') is not None:
-            unc = (a['ageolder'] - a['ageyounger']) / 2
+            unc = abs(a['ageolder'] - a['ageyounger']) / 2
         rows.append(dict(
             datasetid=ds['datasetid'], site=site['sitename'], lon=lon, lat=lat, alt=site['altitude'],
-            region=region(lon, lat), age_ce=ce, age_unc=unc, chron=src, pollensum=tot,
+            region=region(lon, lat), age_ce=ce, age_unc=unc, chron=src, agetype=a['agetype'], depth=s.get('depth'), pollensum=tot,
             cereal=pct(CEREAL), secale=pct(SECALE), arbor=pct(ARBOR), olea=pct(OLEA), pastoral=pct(PAST),
             ap_natural=100 * (trsh - arbor) / tot,
             richness=lrare([v for v in taxa.values() if v >= 1], 100),

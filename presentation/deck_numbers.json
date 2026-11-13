@@ -1,0 +1,342 @@
+{
+ "n_samples": "12,508",
+ "n_records": "1,064",
+ "n_sites": "984",
+ "n_core": 281,
+ "n_core_records": 335,
+ "regions": {
+  "W. & Central Europe": 161,
+  "W. Mediterranean": 36,
+  "E. Europe": 34,
+  "British Isles": 27,
+  "E. Mediterranean & Anatolia": 23
+ },
+ "emc": 23,
+ "emr": 52,
+ "med_unc": "176",
+ "anthro": "+0.28",
+ "anthro_p": "p < 0.001",
+ "nat": "−0.70",
+ "nat_p": "p = 0.004",
+ "cereal_up": "56",
+ "cereal_down": "30",
+ "placebo_p": "p = 0.007",
+ "placebo_rate": "+0.14",
+ "placebo_rate_before": "0.00",
+ "placebo_n": 226,
+ "early_n": 79,
+ "early_p": "p = 0.40",
+ "sens": [
+  {
+   "test": "Main comparison",
+   "win": "400–540 → 541–750",
+   "n": 281,
+   "anthro": "+0.28",
+   "p": "< 0.001",
+   "sig": true
+  },
+  {
+   "test": "Narrower windows",
+   "win": "450–540 → 541–640",
+   "n": 135,
+   "anthro": "+0.21",
+   "p": "0.029",
+   "sig": true
+  },
+  {
+   "test": "Boundary 50 yr earlier",
+   "win": "350–490 → 491–700",
+   "n": 288,
+   "anthro": "+0.14",
+   "p": "< 0.001",
+   "sig": true
+  },
+  {
+   "test": "Boundary 50 yr later",
+   "win": "450–590 → 591–800",
+   "n": 288,
+   "anthro": "+0.26",
+   "p": "< 0.001",
+   "sig": true
+  },
+  {
+   "test": "Plague period vs 751–900",
+   "win": "541–750 → 751–900",
+   "n": 302,
+   "anthro": "+0.37",
+   "p": "< 0.001",
+   "sig": true
+  },
+  {
+   "test": "First 60 years only",
+   "win": "450–540 → 541–600",
+   "n": 79,
+   "anthro": "+0.05",
+   "p": "0.40",
+   "sig": false
+  }
+ ],
+ "regional": [
+  {
+   "region": "W. & Central Europe",
+   "n": 161,
+   "anthro": "+0.30",
+   "p": "< 0.001",
+   "sig": true,
+   "mc": "100"
+  },
+  {
+   "region": "W. Mediterranean",
+   "n": 36,
+   "anthro": "+0.50",
+   "p": "0.057",
+   "sig": false,
+   "mc": "19"
+  },
+  {
+   "region": "E. Europe",
+   "n": 34,
+   "anthro": "+0.14",
+   "p": "0.011",
+   "sig": true,
+   "mc": "14"
+  },
+  {
+   "region": "British Isles",
+   "n": 27,
+   "anthro": "+0.23",
+   "p": "0.12",
+   "sig": false,
+   "mc": "3"
+  },
+  {
+   "region": "E. Mediterranean & Anatolia",
+   "n": 23,
+   "anthro": "−0.08",
+   "p": "0.18",
+   "sig": false,
+   "mc": "24"
+  }
+ ],
+ "T": "−0.005",
+ "T_p": "p = 0.78",
+ "T_sd": "0.22",
+ "m2a": "−0.12",
+ "m2a_p": "p = 0.024",
+ "m2b": "−0.03",
+ "m2b_p": "p = 0.47",
+ "m2_wce": "−0.17",
+ "m2_wce_p": "p = 0.007",
+ "m5": "+0.01",
+ "m5_p": "p = 0.76",
+ "cool_cps": "0.25",
+ "cool_bhm": "0.32",
+ "cool_alps": "0.61",
+ "alps_fall": "1.5",
+ "alps_from": 509,
+ "alps_to": 552,
+ "bhm_hw": "0.9",
+ "soreq_n541": 4,
+ "em": [
+  {
+   "sample": "Mid-term (13 sites)",
+   "n": 13,
+   "arbor": "−0.42",
+   "arbor_p": "0.15",
+   "anthro": "−0.06",
+   "anthro_p": "0.38"
+  },
+  {
+   "sample": "Final core (23 sites)",
+   "n": 23,
+   "arbor": "−0.07",
+   "arbor_p": "0.12",
+   "anthro": "−0.08",
+   "anthro_p": "0.18"
+  },
+  {
+   "sample": "Relaxed rule (52 sites)",
+   "n": 52,
+   "arbor": "0.00",
+   "arbor_p": "0.33",
+   "anthro": "−0.07",
+   "anthro_p": "0.43"
+  }
+ ],
+ "em_arbor_decline": "61",
+ "hyde_crop_down": "85",
+ "hyde_cereal_down": "30",
+ "hyde_graz_up": "70",
+ "hyde_past_up": "58",
+ "hyde_rho": "0.21",
+ "hyde_bars": [
+  {
+   "region": "All sites",
+   "crop_down": 85.4,
+   "cereal_down": 30.2
+  },
+  {
+   "region": "W. & Central Europe",
+   "crop_down": 96.9,
+   "cereal_down": 31.7
+  },
+  {
+   "region": "W. Mediterranean",
+   "crop_down": 58.3,
+   "cereal_down": 22.2
+  },
+  {
+   "region": "E. Europe",
+   "crop_down": 44.1,
+   "cereal_down": 32.4
+  },
+  {
+   "region": "British Isles",
+   "crop_down": 100.0,
+   "cereal_down": 14.8
+  },
+  {
+   "region": "E. Mediterranean & Anatolia",
+   "crop_down": 91.3,
+   "cereal_down": 47.8
+  }
+ ],
+ "hyde_600": 88,
+ "mc_rows": [
+  {
+   "scope": "All sites",
+   "cells": [
+    "↑ 100%",
+    "↑ 90%",
+    "↑ 56%",
+    "↑ 98%",
+    "↓ 95%",
+    "↑ 96%"
+   ],
+   "vals": [
+    100.0,
+    89.9,
+    56.10000000000001,
+    98.3,
+    94.9,
+    95.6
+   ]
+  },
+  {
+   "scope": "W. & Central Europe",
+   "cells": [
+    "↑ 100%",
+    "↑ 93%",
+    "↑ 74%",
+    "↑ 100%",
+    "↓ 92%",
+    "↑ 98%"
+   ],
+   "vals": [
+    100.0,
+    93.2,
+    74.3,
+    99.7,
+    92.5,
+    97.9
+   ]
+  },
+  {
+   "scope": "W. Mediterranean",
+   "cells": [
+    "↑ 4%",
+    "↑ 11%",
+    "↑ 33%",
+    "↑ 19%",
+    "↓ 18%",
+    "↑ 12%"
+   ],
+   "vals": [
+    4.1000000000000005,
+    11.3,
+    32.9,
+    19.0,
+    17.5,
+    12.5
+   ]
+  },
+  {
+   "scope": "E. Europe",
+   "cells": [
+    "↑ 18%",
+    "↑ 11%",
+    "↑ 2%",
+    "↑ 14%",
+    "↓ 12%",
+    "↑ 6%"
+   ],
+   "vals": [
+    17.7,
+    11.1,
+    2.3,
+    13.6,
+    11.7,
+    6.1
+   ]
+  },
+  {
+   "scope": "E. Mediterranean (23)",
+   "cells": [
+    "↓ 9%",
+    "↓ 4%",
+    "↓ 25%",
+    "↓ 24%",
+    "↑ 9%",
+    "↓ 16%"
+   ],
+   "vals": [
+    8.7,
+    4.4,
+    24.9,
+    24.4,
+    9.4,
+    15.7
+   ]
+  },
+  {
+   "scope": "E. Med, relaxed (52)",
+   "cells": [
+    "↓ 12%",
+    "↓ 2%",
+    "↓ 15%",
+    "↓ 25%",
+    "↑ 7%",
+    "↓ 14%"
+   ],
+   "vals": [
+    12.4,
+    2.4,
+    15.3,
+    25.3,
+    7.3,
+    13.6
+   ]
+  }
+ ],
+ "mc_names": [
+  "Cereal",
+  "Pastoral",
+  "Cultivated trees",
+  "All anthropogenic",
+  "Natural trees",
+  "Richness"
+ ],
+ "n_dup": 14,
+ "rev": {
+  "midterm_records_in_final": 659,
+  "midterm_samples_in_those": 7380,
+  "samples_changed_or_removed": 284,
+  "records_affected": 19
+ },
+ "mid": {
+  "listed": 891,
+  "used_midterm": 671,
+  "used_final": 862
+ },
+ "mid_anthro": "+0.20"
+}
